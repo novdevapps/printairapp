@@ -4,16 +4,16 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
-      app_store_connect: sampleApiKey
+      app_store_connect: CodeMagicPrinter
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.sample.sample
+        bundle_identifier: com.doreen.smartprintapp
       vars:
-        BUNDLE_ID: "com.sample.sample"
-        XCODE_PROJECT: "sample.xcodeproj"
-        XCODE_SCHEME: "sample"
-        APP_STORE_APPLE_ID: 6738407685
+        BUNDLE_ID: "com.doreen.smartprintapp"
+        XCODE_PROJECT: "AirPrinter.xcodeproj"
+        XCODE_SCHEME: "AirPrinter"
+        APP_STORE_APPLE_ID: 6746974150
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
     scripts:
       - name: Resolve Swift Package Manager dependencies
